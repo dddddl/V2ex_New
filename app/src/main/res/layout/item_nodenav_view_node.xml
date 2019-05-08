@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+                name="viewModel"
+                type="com.ddddl.v2ex.viewmodel.NavItemViewModel"/>
+
+    </data>
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/node_nav_color"
+            android:textColor="@color/black_aa"
+            android:layout_marginStart="@dimen/node_item_padding_left_right"
+            android:layout_marginTop="@dimen/node_item_padding_top_bottom"
+            android:paddingBottom="@dimen/node_item_padding_top_bottom"
+            android:paddingEnd="@dimen/node_item_padding_left_right"
+            android:paddingStart="@dimen/node_item_padding_left_right"
+            android:paddingTop="@dimen/node_item_padding_top_bottom"
+            android:textSize="15sp"
+            android:text="@{viewModel.name}"
+    />
+
+    <!--<com.google.android.flexbox.FlexboxLayout-->
+    <!--android:id="@+id/fbl_nodes"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:alignItems="flex_start"-->
+    <!--app:dividerDrawable="@drawable/divider"-->
+    <!--app:flexDirection="row"-->
+    <!--app:flexWrap="wrap"-->
+    <!--app:justifyContent="flex_start"-->
+    <!--app:showDivider="beginning|middle|end"/>-->
+
+    <!--<androidx.recyclerview.widget.RecyclerView-->
+    <!--android:paddingStart="@dimen/node_margin"-->
+    <!--android:paddingTop="@dimen/node_margin"-->
+    <!--tools:ignore="RtlSymmetry"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:nodeItem="@{viewModel.nodeArrayList}"-->
+    <!--/>-->
+
+
+</layout>

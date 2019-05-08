@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".MainActivity">
+
+    <!--<androidx.coordinatorlayout.widget.CoordinatorLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--app:layout_constraintBottom_toTopOf="@id/navigation"-->
+    <!--&gt;-->
+
+    <!--<com.google.android.material.appbar.AppBarLayout-->
+    <!--android:id="@+id/appbar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:theme="@style/AppTheme.AppBarOverlay"-->
+    <!--&gt;-->
+
+    <!--<androidx.appcompat.widget.Toolbar-->
+    <!--android:id="@+id/toolbar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="?attr/actionBarSize"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="?attr/colorPrimary"-->
+    <!--app:layout_scrollFlags="enterAlways"-->
+    <!--app:popupTheme="@style/AppTheme.PopupOverlay"-->
+    <!--app:title="@string/app_name"-->
+    <!--/>-->
+    <!--</com.google.android.material.appbar.AppBarLayout>-->
+    <!--</androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+
+    <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/vp_main"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/app_color_theme_1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/navigation"
+    />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="?android:attr/windowBackground"
+            app:menu="@menu/navigation"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
