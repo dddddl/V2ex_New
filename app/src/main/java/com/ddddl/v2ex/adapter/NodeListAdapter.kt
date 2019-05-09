@@ -78,18 +78,6 @@ class NodeListAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         override fun onBind(position: Int) {
             val item = nodeList[position]
             navItemViewModel = NavItemViewModel(this, item)
-
-//            mBinding.rcvNode.apply {
-//
-//                adapter = NodeAdapter()
-//
-//                layoutManager = FlexboxLayoutManager(context).apply {
-//                    flexWrap = FlexWrap.WRAP
-//                    flexDirection = FlexDirection.ROW
-//                    alignItems = AlignItems.STRETCH
-//                    justifyContent = JustifyContent.FLEX_START
-//                }
-//            }
             mBinding.viewModel = navItemViewModel
             mBinding.executePendingBindings()
         }

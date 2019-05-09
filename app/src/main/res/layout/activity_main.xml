@@ -8,37 +8,12 @@
         android:fitsSystemWindows="true"
         tools:context=".MainActivity">
 
-    <!--<androidx.coordinatorlayout.widget.CoordinatorLayout-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent"-->
-    <!--app:layout_constraintBottom_toTopOf="@id/navigation"-->
-    <!--&gt;-->
-
-    <!--<com.google.android.material.appbar.AppBarLayout-->
-    <!--android:id="@+id/appbar"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:theme="@style/AppTheme.AppBarOverlay"-->
-    <!--&gt;-->
-
-    <!--<androidx.appcompat.widget.Toolbar-->
-    <!--android:id="@+id/toolbar"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="?attr/actionBarSize"-->
-    <!--android:layout_weight="1"-->
-    <!--android:background="?attr/colorPrimary"-->
-    <!--app:layout_scrollFlags="enterAlways"-->
-    <!--app:popupTheme="@style/AppTheme.PopupOverlay"-->
-    <!--app:title="@string/app_name"-->
-    <!--/>-->
-    <!--</com.google.android.material.appbar.AppBarLayout>-->
-    <!--</androidx.coordinatorlayout.widget.CoordinatorLayout>-->
 
     <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/vp_main"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:background="@color/app_color_theme_1"
+            android:background="@color/white"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toTopOf="@id/navigation"
     />

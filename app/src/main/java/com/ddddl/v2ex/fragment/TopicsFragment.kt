@@ -1,15 +1,7 @@
 package com.ddddl.v2ex.fragment
 
-import android.animation.IntEvaluator
-import android.animation.ValueAnimator
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.MotionEvent
 import android.view.View
-import android.view.ViewGroup
-import android.widget.LinearLayout
-import androidx.annotation.Nullable
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -23,7 +15,6 @@ import com.ddddl.v2ex.databinding.FragmentTopicsBinding
 import com.ddddl.v2ex.navigator.TopicsNavigator
 import com.ddddl.v2ex.view.LinearLayoutColorDivider
 import com.ddddl.v2ex.viewmodel.TopicsViewModel
-import timber.log.Timber
 import java.util.ArrayList
 
 class TopicsFragment : BaseFragment<FragmentTopicsBinding, TopicsViewModel>(),
@@ -59,11 +50,12 @@ class TopicsFragment : BaseFragment<FragmentTopicsBinding, TopicsViewModel>(),
 
     private fun setUp() {
         val topicsAdapter = TopicsAdapter(ArrayList<TopicStartInfo.Item>())
-        val valueAnimator = ValueAnimator.ofInt(100, 0)
+//        val valueAnimator = ValueAnimator.ofInt(100, 0)
         mFragmentTopicsBinding.rcvTopics.apply {
             layoutManager = LinearLayoutManager(context).apply {
                 orientation = RecyclerView.VERTICAL
             }
+
             addItemDecoration(
                 LinearLayoutColorDivider(
                     resources,
